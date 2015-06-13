@@ -8,8 +8,8 @@ with word   | A[]  | B[]     | A+B
 without word| C[]  | D[]     | C+D
    sum      | A+C[]| B+D[]   | N
 ***
-chi^2 = N(AD-BC)^2/(A+C)(A+B)(B+D)(C+D)  
-chi^2 = (AD-BC)^2/(A+B)(C+D) (abbrev for in-cat scenario)
+$\chi^2 = \frac{N(AD-BC)^2}{(A+C)(A+B)(B+D)(C+D)}$  
+$\chi^2 = \frac{(AD-BC)^2}{(A+B)(C+D)}$ (abbrev for in-cat scenario)
 ## Input Format
 cat'\t'segments  
 cat is class label in string while segments are space separeted words from a certain passage  

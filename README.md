@@ -2,7 +2,7 @@
 This project provide a text feature selection method with chi-squared test.  
 The script could run in stand-alone mode or cluster mode by hadoop streaming.
 ***
-\---          | cat  | non-cat | sum over cats
+\---        | cat  | non-cat | sum over cats
 ------------|------|---------|--------------
 with word   | A[]  | B[]     | A+B
 without word| C[]  | D[]     | C+D

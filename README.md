@@ -1,2 +1,2 @@
 # chi-square
-text feature selection with Chi-squared test
+Text Feature Selection with Chi-Squared Test

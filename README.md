@@ -11,8 +11,6 @@ without word| C[]  | D[]     | C+D
 ***
 $\chi^2 = \frac{N(AD-BC)^2}{(A+C)(A+B)(B+D)(C+D)}$  
 $\chi^2 = \frac{(AD-BC)^2}{(A+B)(C+D)}$ (abbrev for in-cat scenario)
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 ## Input Format
 cat'\t'segments  
 cat is class label in string while segments are space separeted words from a certain passage  

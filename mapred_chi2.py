@@ -34,7 +34,7 @@ def reducer():
 			B = A_B - A
 			C = A_C[cat] - A
 			D = C_D - C
-			chi_squar = N*(A*D-B*C)**2/A_C[cat]/A_B/B_D[cat]/C_D
+			chi_squar = N * (A * D - B * C) ** 2 / A_C[cat] / A_B / B_D[cat] / C_D
 			print '\t'.join(map(str, [cat, current_word, chi_squar, A, B, C, D]))
 	
 	A_C = {}

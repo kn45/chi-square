@@ -23,3 +23,8 @@ cat'\t'count
 eg:   
 fashion'\t'347882  
 sport'\t'2443297
+##Usage
+####stand-alone:
+cat input_passage.tst | ./mapred_chi2.py m | sort | ./mapred_chi2.py r > output_chi2.tst
+####cluster:
+refer to run_chi2_uni.sh

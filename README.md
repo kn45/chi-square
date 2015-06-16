@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # Chi-Squared Test
 This project provide a text feature selection method with chi-squared test.  
 The script could run in stand-alone mode or cluster mode by hadoop streaming.
@@ -28,4 +27,4 @@ sport'\t'2443297
 ####stand-alone:
 `cat input_passage.tst | ./mapred_chi2.py m | sort | ./mapred_chi2.py r > output_chi2.tst`
 ####cluster:
-refer to run_chi2_uni.sh
+Refer to run_chi2_uni.sh

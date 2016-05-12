@@ -16,7 +16,8 @@ cat is class label in string while segments are space separeted words from a cer
 eg:  
 sport'\t'well done MSN congrats to Barcelona
 ##Output Format
-cat'\t'word'\t'chi2'\t'A'\t'B'\t'C'\t'D
+cat'\t'word'\t'chi2'\t'A'\t'B'\t'C'\t'D'\t'st  
+st means positive or negative relative 
 ##Dict Format
 file 'all_cat_segs_cnt' records the pre-computed number of passages of each cat with format:  
 cat'\t'count  

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.6
+#!/usr/bin/env python
 # -*- coding=utf-8 -*-
 
 import sys
@@ -34,9 +34,10 @@ def reducer():
             B = A_B - A
             C = A_C[cat] - A
             D = C_D - C
-            chi_squar = N * (A * D - B * C) ** 2 / A_C[cat] / A_B / B_D[cat] / C_D
-            print '\t'.join(map(str, [cat, current_word, chi_squar, A, B, C, D]))
-    
+            chi_squar = N*(A*D-B*C)**2 / A_C[cat] / A_B / B_D[cat] / C_D
+            print '\t'.join(map(str, [cat, current_word, chi_squar, A, B, C, D,
+                                      1 if A*D>B*C else -1]))
+
     A_C = {}
     B_D = {}
     N = 0.0

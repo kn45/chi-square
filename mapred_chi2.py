@@ -3,6 +3,7 @@
 
 import sys
 
+
 def mapper():
     for line in sys.stdin:
         [src, content] = line.strip('\n').split('\t')
@@ -10,6 +11,7 @@ def mapper():
         for word in content_set:
             if len(word) > 0:
                 print '\t'.join([word, src, '1'])
+
 
 def reducer():
     def init_word_map(word_map):
@@ -22,7 +24,7 @@ def reducer():
         if cat not in word_map:
             word_map[cat] = 1.0
         word_map[cat] += float(cnt)
-    
+
     def output(word_map):
         if len(word_map) == 0:
             return
@@ -36,7 +38,7 @@ def reducer():
             D = C_D - C
             chi_squar = N*(A*D-B*C)**2 / A_C[cat] / A_B / B_D[cat] / C_D
             print '\t'.join(map(str, [cat, current_word, chi_squar, A, B, C, D,
-                                      1 if A*D>B*C else -1]))
+                                      1 if A*D > B*C else -1]))
 
     A_C = {}
     B_D = {}
@@ -58,10 +60,10 @@ def reducer():
             output(word_map)
             current_word = word
             word_map = init_word_map(word_map)
-    
+
         readin([word, src, cnt])
         current_word = word
-    
+
     output(word_map)
 
 if __name__ == '__main__':
@@ -69,4 +71,3 @@ if __name__ == '__main__':
         mapper()
     if sys.argv[1] == 'r':
         reducer()
-

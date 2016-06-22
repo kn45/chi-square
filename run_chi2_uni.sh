@@ -31,7 +31,8 @@ chi2 double,
 a double,
 b double,
 c double,
-d double
+d double,
+pos int
 )
 row format delimited fields terminated by '\t'
 location '$OUTPUT_PATH';

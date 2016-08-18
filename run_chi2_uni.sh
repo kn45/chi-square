@@ -1,12 +1,6 @@
 #! /bin/bash
 
-source ~/.bash_profile
 job_name=kn45_chi_square
-ver_num=$1
-if [ "x$1" = "x" ]
-then
-    ver_num=`date +%Y%m%d`
-fi
 
 echo "*******`date` start: $0 $* *******"
 
@@ -25,14 +19,14 @@ TABLE_NAME=kn45_chi2_uni
 hive -e "
 create external table if not exists $TABLE_NAME
 (
-cat_id string,
-word string,
-chi2 double,
-a double,
-b double,
-c double,
-d double,
-pos int
+  cat_id string,
+  word string,
+  chi2 double,
+  a double,
+  b double,
+  c double,
+  d double,
+  pos int
 )
 row format delimited fields terminated by '\t'
 location '$OUTPUT_PATH';

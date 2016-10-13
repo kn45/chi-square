@@ -11,7 +11,7 @@ hadoop fs -rmr $OUTPUT_PATH
 
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.4.0.jar \
 -input $INPUT_PATH_T -output $OUTPUT_PATH \
--mapper "mapred_chi2.py m" -reducer "mapred_chi2.py r" \
+-mapper "mapred_chi2.py m" -reducer "mapred_chi2.py r all_cat_segs_cnt" \
 -jobconf mapred.map.tasks=400 -jobconf mapred.reduce.tasks=300 -jobconf mapred.job.name=$job_name \
 -file mapred_chi2.py all_cat_segs_cnt
 

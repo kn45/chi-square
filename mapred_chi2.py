@@ -44,7 +44,7 @@ def reducer(object):
     A_C = {}
     B_D = {}
     N = 0.0
-    ratio_file = 'all_cat_segs_cnt'
+    ratio_file = sys.argv[2]
     with open(ratio_file, 'r') as f:
         for line in f:
             [cat, cnt] = line.strip('\n').split('\t')

@@ -20,13 +20,13 @@ sport`[TAB]`well done MSN congrats to Barcelona
 cat`[TAB]`word`[TAB]`chi2_value`[TAB]`A`[TAB]`B`[TAB]`C`[TAB]`D`[TAB]`pos  
 pos means positive(1) or negative(-1) relative 
 ##Dict Format
-file 'all_cat_segs_cnt' records the pre-computed number of passages of each category with format:  
+A file records the pre-computed number of passages of each category with format:  
 cat`[TAB]`count  
-eg:   
+e.g.:   
 fashion`[TAB]`347882  
 sport`[TAB]`2443297
 ##Usage
 ####stand-alone:
-`cat input_passage.tst | ./mapred_chi2.py m | sort | ./mapred_chi2.py r > output_chi2.tst`
+`cat input_passage.tst | ./mapred_chi2.py m | sort | ./mapred_chi2.py r passage_cnt_file > output_chi2.tst`
 ####cluster:
 Refer to run_chi2_uni.sh

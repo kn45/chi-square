@@ -1,6 +1,7 @@
 # Chi-Squared Test
 This project provide a text feature selection method with chi-squared test.  
-The script could run in stand-alone mode or cluster mode by hadoop streaming.
+The script could run in stand-alone mode or cluster mode by hadoop streaming.  
+https://github.com/kn45/Chi-Square
 ***
 | \---         | cat   | non-cat | sum over cats |
 | ------------ | ----- | ------- | ------------- |

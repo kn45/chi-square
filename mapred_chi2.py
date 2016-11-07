@@ -5,7 +5,7 @@
 import sys
 
 
-def mapper(object):
+def mapper():
     for line in sys.stdin:
         [src, content] = line.strip('\n').split('\t')
         content_set = set(content.split(' '))
@@ -14,7 +14,7 @@ def mapper(object):
                 print '\t'.join([word, src, '1'])
 
 
-def reducer(object):
+def reducer():
     def init_word_map(word_map):
         for cat in A_C:
             word_map[cat] = 0.0

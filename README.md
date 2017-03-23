@@ -36,4 +36,5 @@ sport`[TAB]`2443297
 `cat input_passage.tst | ./mapred_chi2.py m | sort | ./mapred_chi2.py r passage_cnt_file > output_chi2.tst`  
 
 ####cluster:
+
 Refer to run_chi2_uni.sh
